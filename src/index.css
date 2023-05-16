@@ -1,0 +1,115 @@
+.app {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  background-color: #fbda61;
+  background-image: linear-gradient(45deg, #fbda61 0%, #5affaa 100%);
+}
+
+.app1 {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+
+  background-color: #ffdee9;
+  background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
+}
+
+.gameboard {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  border: solid 1px rgb(255, 250, 250,0.3);
+   box-shadow: 1px 1px 12px 12px rgb(158, 255, 2);
+   background-color: rgb(238, 170, 34); 
+  /* background: rgba(255,255,255,0.13);
+  backdrop-filter: blur(5px);
+  border-radius: 12px;
+  box-shadow: 0 4px 30px rgba(0,0,0,0.1); */
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px black;
+  box-sizing: border-box;
+}
+
+.circle {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  border: 15px solid rgb(249, 2, 2);
+  box-sizing: border-box;
+  width: 100%;  
+}
+.msg {
+  margin-top: 30px;
+}
+.cross {
+  width: 90px;
+  height: 90px;
+  position: relative;
+  transform: rotate(45deg);
+}
+
+.cross::before,
+.cross::after {
+  content: "";
+  position: absolute;
+  background-color: black;
+}
+
+.cross:before {
+  left: 50%;
+  width: 30%;
+  margin-left: -15%;
+  height: 100%;
+}
+.cross:after {
+  top: 50%;
+  height: 30%;
+  margin-top: -15%;
+  width: 100%;
+}
+
+.btn {
+  font-weight: 400;
+  background-color: rgb(150, 1, 1);
+  border: 1px solid yellow;
+  box-shadow: 10px 10px 3px 3px rgba(0, 0, 0);
+  width: 70px;
+  height: 70px;
+  border-radius: 30%;
+}
+.btntheme {
+  font-weight: 400;
+  background-color: rgb(14, 81, 216);
+  border: 1px solid yellow;
+  box-shadow: 10px 10px 3px 3px rgba(0, 0, 0);
+  width: 70px;
+  height: 70px;
+  border-radius: 30%;
+}
+
+.head {
+  width: 300px;
+  height: 100px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  line-height: 20px;
+}
