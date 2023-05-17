@@ -113,3 +113,12 @@
   font-weight: 500;
   line-height: 20px;
 }
+
+.winmsg{
+  color: red;
+  font-weight: 500;
+  line-height: 15px;
+  text-decoration: solid;
+  
+
+}

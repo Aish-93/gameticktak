@@ -41,12 +41,12 @@ setTog(!tog);
       let corssWins = ele.every((cell) => cells[cell] === "cross");
 
       if (circleWins) {
-        setWinMsg(`ArryaBhatta won Game, rest in ${count} second`);
+        setWinMsg(`ArryaBhatta won Game, reset in ${count} second`);
         reClock();
         return;
       }
       if (corssWins) {
-        setWinMsg(`W.C. Röntgen won Game, rest in ${count} second`);
+        setWinMsg(`W.C. Röntgen won Game, reset in ${count} second`);
         reClock();
         return;
       }
@@ -96,7 +96,7 @@ setTog(!tog);
         </button>
       </div>
       <div>
-        <p>{winMsg}</p>
+        <p className="winmsg">{winMsg}</p>
       </div>
 
       <button onClick={handleTheme} className="btntheme">Change theme</button>
